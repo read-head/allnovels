@@ -65,7 +65,7 @@ SERIES.forEach((s, i) => {
   const box = a.querySelector(".cover");
   const img = new Image();
   img.alt = s.title + " cover";
-  img.src = "book-covers/" + s.slug + ".webp";
+  img.src = "book-covers/" + s.slug + ".jpg";
   img.onerror = () => {
     box.innerHTML = '<div class="fallback"></div>';
     const f = box.firstChild;

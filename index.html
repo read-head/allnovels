@@ -47,7 +47,7 @@ footer{padding-bottom:40px;color:var(--muted);font-size:.9rem}
 // ===== EDIT THIS LIST to add your series =====
 // slug = folder name inside "series/". Cover image goes in "covers/slug.jpg".
 const SERIES = [
-  { title: "Campfire Cooking in Another World with My Absurd Skill", slug: "example-one", note: "Isekai, Slice-of-Life, Adventure, Fantasy" }
+  { title: "Campfire Cooking in Another World with My Absurd Skill", slug: "ln-campfirecooking-v1", note: "Isekai, Slice-of-Life, Adventure, Fantasy" }
 ];
 // =============================================
 
@@ -65,7 +65,7 @@ SERIES.forEach((s, i) => {
   const box = a.querySelector(".cover");
   const img = new Image();
   img.alt = s.title + " cover";
-  img.src = "covers/" + s.slug + ".jpg";
+  img.src = "book-covers/" + s.slug + ".webp";
   img.onerror = () => {
     box.innerHTML = '<div class="fallback"></div>';
     const f = box.firstChild;
